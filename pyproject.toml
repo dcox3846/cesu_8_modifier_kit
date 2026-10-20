@@ -1,0 +1,14 @@
+[project]
+name = "cesu-8-modifier-kit"
+version = "0.1.0"
+description = "Python codec that converts CESU-8 encoded bytes into strings by reassembling surrogate pairs for non-BMP characters."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
