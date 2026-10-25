@@ -1,6 +1,6 @@
 [project]
 name = "cesu-8-modifier-kit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python codec that converts CESU-8 encoded bytes into strings by reassembling surrogate pairs for non-BMP characters."
 requires-python = ">=3.10"
 dependencies = []
