@@ -31,3 +31,10 @@ A strict interpretation is used: input must be well-formed CESU-8. Lone surrogat
 
 - `decode(data)` — decode `bytes` or `bytearray` to `str`.
 - `CESU8DecodeError` — subclass of `ValueError`, raised on any malformation.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
